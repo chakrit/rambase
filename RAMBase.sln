@@ -1,8 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{433640D7-DD1C-4A07-B218-EB4A168CCB26}"
+	ProjectSection(SolutionItems) = preProject
+		README.markdown = README.markdown
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E67A9530-509F-40F7-B54D-95085D89A31D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAMBase", "src\RAMBase\RAMBase.csproj", "{0F3DF407-3F71-4FC0-AE8C-4D7F001E4F76}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F3DF407-3F71-4FC0-AE8C-4D7F001E4F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3DF407-3F71-4FC0-AE8C-4D7F001E4F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3DF407-3F71-4FC0-AE8C-4D7F001E4F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3DF407-3F71-4FC0-AE8C-4D7F001E4F76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F3DF407-3F71-4FC0-AE8C-4D7F001E4F76} = {E67A9530-509F-40F7-B54D-95085D89A31D}
 	EndGlobalSection
 EndGlobal
