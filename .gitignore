@@ -1,0 +1,14 @@
+bin
+obj
+*.suo
+*.user
+*.cache
+*.Cache
+*.gpState
+TestResults
+TestResult.*
+build
+build.zip
+build\*.nupkg
+sider.all.zip
+sider.nupkg.zip
