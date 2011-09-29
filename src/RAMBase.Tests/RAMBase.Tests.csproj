@@ -5,14 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0F3DF407-3F71-4FC0-AE8C-4D7F001E4F76}</ProjectGuid>
+    <ProjectGuid>{8CD19346-D998-42FF-A673-F4EB8786ED0C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RAMBase</RootNamespace>
-    <AssemblyName>RAMBase</AssemblyName>
+    <RootNamespace>RAMBase.Tests</RootNamespace>
+    <AssemblyName>RAMBase.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks">
+      <HintPath>..\..\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="pnunit.framework">
+      <HintPath>..\..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,22 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context.cs" />
-    <Compile Include="ContextBuilder.cs" />
-    <Compile Include="ContextExtensions.cs" />
-    <Compile Include="CrcStream.cs" />
-    <Compile Include="IContext.cs" />
-    <Compile Include="IScope.cs" />
-    <Compile Include="ModelContainer.cs" />
-    <Compile Include="Persistor.cs" />
-    <Compile Include="Persistor.core.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RAM.cs" />
-    <Compile Include="Scope.cs" />
-    <Compile Include="Settings.Builder.cs" />
-    <Compile Include="Settings.contextBuilder.cs" />
-    <Compile Include="Settings.cs" />
-    <Compile Include="Settings.defaults.cs" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RAMBase\RAMBase.csproj">
+      <Project>{0F3DF407-3F71-4FC0-AE8C-4D7F001E4F76}</Project>
+      <Name>RAMBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dud.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
