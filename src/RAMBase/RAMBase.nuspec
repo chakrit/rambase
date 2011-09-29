@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>rambase</id>
+    <version>0.0.0</version>
+    <title>RAMBase</title>
+    <authors>Chakrit Wichian (http://chakrit.net/)</authors>
+    <owners>Chakrit Wichian (http://chakrit.net/)</owners>
+    <projectUrl>https://github.com/chakrit/rambase</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      RAM-based barely-transactional C# database which lets you forget about
+      persistence for a (very) big while.
+    </description>
+    <copyright>Public domain</copyright>
+    <tags>rambase, net40, persistence, database</tags>
+  </metadata>
+</package>
